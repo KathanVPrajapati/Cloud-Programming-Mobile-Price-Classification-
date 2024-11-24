@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-2kbz55s=88t$s2pr()@t=wn)8z^c8(t@t*_s=(l%4kbelq*37n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -100,6 +100,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://mobileprice-284279361159.us-central1.run.app'
+]
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
