@@ -55,7 +55,7 @@
 
         <div class="form-group">
             <label for="battery_power">Battery Power (mAh):</label>
-            <input type="number" id="battery_power" name="battery_power" min="0" max="5000" required>
+            <input type="number" id="battery_power" name="battery_power" min="0" max="5000" placeholder="0-5000" required>
         </div>
         <div class="form-group">
             <label for="bluetooth">Has Bluetooth:</label>
@@ -66,7 +66,7 @@
         </div>
         <div class="form-group">
             <label for="clock_speed">Clock Speed (GHz):</label>
-            <input type="number" step="0.1" id="clock_speed" name="clock_speed" min="0" max="3.5" required>
+            <input type="number" step="0.1" id="clock_speed" name="clock_speed" min="0" max="3.5" placeholder="0-3.5" required>
         </div>
         <div class="form-group">
             <label for="dual_sim">Has Dual Sim:</label>
@@ -77,7 +77,7 @@
         </div>
         <div class="form-group">
             <label for="front_camera">Front Camera (MP):</label>
-            <input type="number" id="front_camera" name="fc" min="0" max="50" required>
+            <input type="number" id="front_camera" name="fc" min="0" max="50" placeholder="0-50" required>
         </div>
         <div class="form-group">
             <label for="four_g">Has 4G:</label>
@@ -88,47 +88,47 @@
         </div>
         <div class="form-group">
             <label for="internal_memory">Internal Memory (GB):</label>
-            <input type="number" id="internal_memory" name="int_memory" min="0" max="128" required>
+            <input type="number" id="internal_memory" name="int_memory" min="0" max="128" placeholder="0-128" required>
         </div>
         <div class="form-group">
             <label for="mobile_depth">Mobile Depth (cm):</label>
-            <input type="number" step="0.1" id="mobile_depth" name="mobile_depth" min="0" max="2" required>
+            <input type="number" step="0.1" id="mobile_depth" name="mobile_depth" min="0" max="2" placeholder="0-2" required>
         </div>
         <div class="form-group">
             <label for="weight">Weight (g):</label>
-            <input type="number" id="weight" name="weight" min="0" max="300" required>
+            <input type="number" id="weight" name="weight" min="0" max="300" placeholder="0-300" required>
         </div>
         <div class="form-group">
             <label for="cores">Processor Cores:</label>
-            <input type="number" id="cores" name="n_cores" min="0" max="32" required>
+            <input type="number" id="cores" name="n_cores" min="0" max="32" placeholder="0-32" required>
         </div>
         <div class="form-group">
             <label for="primary_camera">Primary Camera (MP):</label>
-            <input type="number" id="primary_camera" name="pc" min="0" max="50" required>
+            <input type="number" id="primary_camera" name="pc" min="0" max="50" placeholder="0-50" required>
         </div>
         <div class="form-group">
             <label for="pixel_height">Pixel Height:</label>
-            <input type="number" id="pixel_height" name="px_height" min="0" max="3000" required>
+            <input type="number" id="pixel_height" name="px_height" min="0" max="3000" placeholder="0-3000" required>
         </div>
         <div class="form-group">
             <label for="pixel_width">Pixel Width:</label>
-            <input type="number" id="pixel_width" name="px_width" min="0" max="3000" required>
+            <input type="number" id="pixel_width" name="px_width" min="0" max="3000" placeholder="0-3000" required>
         </div>
         <div class="form-group">
             <label for="ram">RAM (MB):</label>
-            <input type="number" id="ram" name="ram" min="0" max="8192" required>
+            <input type="number" id="ram" name="ram" min="0" max="8192" placeholder="0-8192" required>
         </div>
         <div class="form-group">
             <label for="screen_height">Screen Height (cm):</label>
-            <input type="number" id="screen_height" name="sc_h" min="0" max="30" required>
+            <input type="number" id="screen_height" name="sc_h" min="0" max="30" placeholder="0-30" required>
         </div>
         <div class="form-group">
             <label for="screen_width">Screen Width (cm):</label>
-            <input type="number" id="screen_width" name="sc_w" min="0" max="30" required>
+            <input type="number" id="screen_width" name="sc_w" min="0" max="30" placeholder="0-300" required>
         </div>
         <div class="form-group">
             <label for="battery_life">Battery Life (hours):</label>
-            <input type="number" id="battery_life" name="battery_life" min="0" max="30" required>
+            <input type="number" id="battery_life" name="battery_life" min="0" max="30" placeholder="0-30" required>
         </div>
         <div class="form-group">
             <label for="three_g">Has 3G:</label>
@@ -160,8 +160,6 @@
             The best mobile price based on your input is in range {{ result }}.
         </div>
     {% endif %}
-
-   
 
 </body>
 </html>
