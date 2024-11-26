@@ -24,4 +24,5 @@ This project uses AWS SageMaker to classify mobile prices based on features such
 - Install the required dependencies using:
   ```bash
   pip install -r requirements.txt
-
+  
+### [Link to the Webpage](https://mobileprice-284279361159.us-central1.run.app/)
