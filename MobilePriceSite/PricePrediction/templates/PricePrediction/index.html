@@ -45,6 +45,10 @@
             margin-top: 20px;
             font-weight: bold;
         }
+        .result{
+            position: relative;
+            top: 15px;
+        }
     </style>
 </head>
 <body>
@@ -157,7 +161,7 @@
     </form>
     {% if result %}
         <div class="result">
-            The best mobile price based on your input is in range {{ result }}.
+            {{ result }}.
         </div>
     {% endif %}
 

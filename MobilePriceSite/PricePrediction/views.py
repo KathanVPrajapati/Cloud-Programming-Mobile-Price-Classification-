@@ -73,6 +73,7 @@ def index(request):
             'ram', 'sc_h', 'sc_w', 'talk_time'
         ]
 
+
         # Extract the 14 features for scaling as a DataFrame with consistent column names
         features_to_scale_df = pd.DataFrame(raw_input[:, scaled_feature_indices], columns=feature_columns)
 
@@ -85,7 +86,6 @@ def index(request):
         # Prepare the payload for the API
         formatted_input = ",".join(map(str, raw_input[0]))
         data = {"body": f"[[{formatted_input}]]".replace(" ", "")} #raw_input.tolist()
-
        
 
         headers = {'Content-Type': 'application/json'}
@@ -115,7 +115,7 @@ def index(request):
                 result = f"Request failed: {str(e)}"
 
     if finalResult != "":
-        result = finalResult
+        result = "The best mobile price based on your input is in range" + finalResult
 
 
 
